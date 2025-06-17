@@ -1,0 +1,40 @@
+import { Dataset } from '../types';
+
+export const datasets: Dataset[] = [
+  {
+    id: 'olympics',
+    name: 'Olympics Medals',
+    description: 'Medal counts by country for the Summer Olympics.',
+    source: 'https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-07-27/olympics.csv',
+    recordCount: 206,
+    lastUpdated: '2024-06-01',
+    tags: ['sports', 'medals', 'countries'],
+    icon: '🏅',
+    color: '#FFD700',
+    dataRows: [],
+  },
+  {
+    id: 'gdelt',
+    name: 'GDELT Events',
+    description: 'Sample of GDELT global event data.',
+    source: 'https://raw.githubusercontent.com/mediagis/nlp-datasets/main/gdelt_sample.csv',
+    recordCount: 1000,
+    lastUpdated: '2024-05-15',
+    tags: ['events', 'global', 'news'],
+    icon: '🌎',
+    color: '#1E90FF',
+    dataRows: [],
+  },
+  {
+    id: 'unsdg',
+    name: 'UN SDG Indicators',
+    description: 'UN Sustainable Development Goals indicator data.',
+    source: 'https://unstats.un.org/sdgs/indicators/database/',
+    recordCount: 500,
+    lastUpdated: '2024-04-20',
+    tags: ['un', 'sdg', 'indicators'],
+    icon: '🌱',
+    color: '#32CD32',
+    dataRows: [],
+  },
+];
